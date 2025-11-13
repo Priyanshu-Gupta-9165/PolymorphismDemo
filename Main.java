@@ -1,23 +1,31 @@
 public class Main {
     public static void main(String[] args) {
 
+        // Runtime Polymorphism demo
         Person p;
 
-        p = new Student("Priyanshu", 20, 101);
+        // Assigning Student object
+        p = new Student("Priyanshu Gupta", 20, 231001);
         p.displayDetails();
 
-        System.out.println("-------------------");
+        System.out.println("--------------------------");
 
-        p = new Teacher("Gupta Sir", 40, "CS101");
+        // Assigning Teacher object
+        p = new Teacher("Rajesh Kumar", 38, "CS104");
         p.displayDetails();
 
-        System.out.println("\nDisplaying both objects separately:");
+        System.out.println("\nShowing individual objects:");
 
-        Student s = new Student("Rohan", 18, 202);
-        Teacher t = new Teacher("Verma Madam", 35, "MATH201");
+        // Creating Student object
+        Student s = new Student("Ravikant Verma", 19, 231015);
 
+        // Creating Teacher object
+        Teacher t = new Teacher("Anil Sharma", 45, "MATH201");
+
+        System.out.println("--------------------------");
         s.displayDetails();
-        System.out.println("-------------------");
+
+        System.out.println("--------------------------");
         t.displayDetails();
     }
 }

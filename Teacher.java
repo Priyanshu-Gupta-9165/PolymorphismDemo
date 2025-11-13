@@ -8,7 +8,9 @@ class Teacher extends Person {
 
     @Override
     void displayDetails() {
-        System.out.println("Teacher Details:");
-        System.out.println("Name: " + name + ", Age: " + age + ", Subject Code: " + subjectCode);
+        System.out.println("Teacher Profile:");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Subject Code: " + subjectCode);
     }
 }
